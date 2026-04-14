@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #ffc06e;
+    --secondary-color: #8D8DFF;
+    --color-1: #F9F6F3;
+    --color-2: #F3F7F9;
+    --color-3: #F6F3F9;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+h1, h2, h3 {
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><text y="28" font-size="32">⛴️</text></svg>') 16 16, pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><text y="28" font-size="32">⛴️</text></svg>') 16 16, pointer;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.company-overview {
+    padding: 1.5em;
+    background: linear-gradient(120deg, rgba(255,192,110,.16), rgba(141,141,255,.16));
+    border-radius: 1rem;
+    margin-bottom: 1.5em;
+}
+
+.company-overview ul {
+    margin-top: 0.75em;
+    list-style: disc inside;
+    line-height: 1.5;
+}
+
+.company-overview li {
+    margin-bottom: 0.4em;
+}
+
+#current-project {
+    padding: 1.5em;
+    background-color: var(--color-2);
+}
+
+#current-project h2 {
+    margin-bottom: 0.75em;
+}
+
+.project-logo {
+    width: min(500px, 100%);
+    margin: 1em auto;
+    border-radius: 0.8em;
+    overflow: hidden;
+    background: var(--color-3);
+}
+
+.project-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 0.75em 1.2em;
+    margin-top: 1em;
+    border-radius: 0.6em;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--base-color);
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}
